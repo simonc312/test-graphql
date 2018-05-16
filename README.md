@@ -1,22 +1,22 @@
-Start server with `ts-node src/server.js`, then navigate to localhost:8888/user
+Start server with `ts-node src/server.js`, then navigate to either `localhost:8888/user` or `localhost:8888/order`
 
-Sample query:
-`
-{
-  user(email: "a@b.c") {
+Sample request for user:
+```
+query {
+  getByEmail(email: "{user email}") {
+    _id
     email
     name
     apiKey
 	}
 }
-`
+```
 
-Sample mutation:
-`
+```
 mutation {
-  updateName(email: "c@b.a", name: "yolo swag") {
-    email
+  updateName(_id: "{mongo id}", name: "yolo swag") {
+    _id
     name
   }
 }
-`
+```

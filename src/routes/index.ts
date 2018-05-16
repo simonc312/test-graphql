@@ -1,6 +1,18 @@
 import * as express from "express";
-import user from "./user";
+import * as graphqlHTTP from "express-graphql";
+import {
+  userSchema,
+  orderSchema,
+} from "../graphql/index";
 
 export default (app: express.Application) => {
-  user(app);
+  app.use("/user", graphqlHTTP({
+    schema: userSchema,
+    graphiql: true
+  }));
+
+  app.use("/order", graphqlHTTP({
+    schema: orderSchema,
+    graphiql: true
+  }));
 };

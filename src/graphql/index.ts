@@ -1,9 +1,20 @@
 import {makeExecutableSchema} from "graphql-tools";
 import {GraphQLSchema} from "graphql";
-import {userResolvers} from "./resolvers/user";
-import {userTypeDefs} from "./typedefs/user";
+import {
+  userResolvers,
+  orderResolvers,
+} from "./resolvers/";
+import {
+  userTypeDefs,
+  orderTypeDefs,
+} from "./typedefs/";
 
 export const userSchema: GraphQLSchema = makeExecutableSchema({
   typeDefs: userTypeDefs,
   resolvers: userResolvers
+});
+
+export const orderSchema: GraphQLSchema = makeExecutableSchema({
+  typeDefs: orderTypeDefs,
+  resolvers: orderResolvers
 });

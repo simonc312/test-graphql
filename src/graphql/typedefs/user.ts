@@ -1,21 +1,18 @@
 export const userTypeDefs: string = `
   type User {
-    email: String!
+    _id: String
+    email: String
     apiKey: String
     name: String
   }
 
   type Query {
-    user(email: String): User
-    allUsers: [User]
+    getById(_id: String): User
+    getByEmail(email: String): User
+    getAll: [User]
   }
 
   type Mutation {
-    updateName(email: String, name: String): User
-  }
-
-  schema {
-    query: Query
-    mutation: Mutation
+    updateName(_id: String, name: String): User
   }
 `;
