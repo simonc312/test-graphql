@@ -1,4 +1,4 @@
-Start server with `ts-node src/server/server.js`, then navigate to localhost:8888/
+Start server with `ts-node src/server.js`, then navigate to localhost:8888/user
 
 Sample query:
 `
@@ -14,7 +14,7 @@ Sample query:
 Sample mutation:
 `
 mutation {
-  updateName(email: "c@b.a", name: "awwww yeah") {
+  updateName(email: "c@b.a", name: "yolo swag") {
     email
     name
   }
