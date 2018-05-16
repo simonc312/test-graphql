@@ -1,4 +1,4 @@
-import * as express from 'express';
+import * as express from "express";
 import * as graphqlHTTP from "express-graphql";
 import {userSchema} from "../graphql/index";
 
