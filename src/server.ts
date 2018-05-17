@@ -1,10 +1,10 @@
 import * as express from "express";
-import routes from "./routes";
+import * as router from "./routes";
 
 const PORT = 8888;
 const app = express();
 
-routes(app);
+app.use("/api", router);
 
 app.listen(PORT, () => {
   console.log(`Listening to port ${PORT}`);

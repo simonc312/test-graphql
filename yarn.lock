@@ -1839,6 +1839,10 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "http://npm.ooapi.com:4873/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
+typescript@^2.8.0:
+  version "2.8.3"
+  resolved "http://npm.ooapi.com:4873/typescript/-/typescript-2.8.3.tgz#5d817f9b6f31bb871835f4edf0089f21abe6c170"
+
 underscore@^1.8.2:
   version "1.9.0"
   resolved "http://npm.ooapi.com:4873/underscore/-/underscore-1.9.0.tgz#31dbb314cfcc88f169cd3692d9149d81a00a73e4"
