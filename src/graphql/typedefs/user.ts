@@ -1,9 +1,9 @@
 export const userTypeDefs: string = `
   type User {
-    _id: String
-    email: String
-    apiKey: String
-    name: String
+    _id: String!
+    email: String!
+    apiKey: String!
+    name: String!
   }
 
   type Query {

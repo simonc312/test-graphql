@@ -1,6 +1,6 @@
 export const orderTypeDefs: string = `
   type Order {
-    _id: String
+    _id: String!
     orderToken: String
     status: String
     mode: String
