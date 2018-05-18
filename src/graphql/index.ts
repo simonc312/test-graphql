@@ -8,10 +8,14 @@ import {
   userTypeDefs,
   orderTypeDefs,
 } from "./typedefs/";
+import { FirstFromDirective } from "./directives";
 
 export const userSchema: GraphQLSchema = makeExecutableSchema({
   typeDefs: userTypeDefs,
-  resolvers: userResolvers
+  resolvers: userResolvers,
+  schemaDirectives: {
+    first: FirstFromDirective
+  },
 });
 
 export const orderSchema: GraphQLSchema = makeExecutableSchema({

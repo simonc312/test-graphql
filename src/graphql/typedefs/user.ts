@@ -12,6 +12,7 @@ export const userTypeDefs: string = `
     apiKey: String!
     #First and last name together
     name: String!
+    firstName: String @first(from: "name")
 
     swag: String @deprecated(reason: "No more yolo.")
   }
